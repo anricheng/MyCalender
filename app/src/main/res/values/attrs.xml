@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalenderComponent">
+        <attr name="titilDateFormat" format="string"/>
+        <attr name="leftButtonDrawable" format="reference|color"/>
+        <attr name="leftButtonVisibility" format="boolean"/>
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="rightButtonDrawable" format="reference|color"/>
+        <attr name="rightButtonVisibility" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:aric="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+   <aric.mycomponent.CalenderComponent
+       aric:titleTextSize="5sp"
+       android:layout_marginLeft="20dp"
+       aric:titilDateFormat="MMM yyyy"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       aric:leftButtonDrawable="@mipmap/ic_launcher"
+       aric:rightButtonDrawable="@mipmap/ic_launcher"
+       android:layout_height="200dp"/>
+
+</LinearLayout>
