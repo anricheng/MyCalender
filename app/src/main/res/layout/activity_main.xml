@@ -6,14 +6,20 @@
               android:layout_marginRight="20dp"
               android:layout_height="match_parent"
               android:orientation="vertical">
+
+
     <aric.mycomponent.CalenderComponent
         aric:titleTextSize="5sp"
         android:layout_marginLeft="20dp"
-        aric:titilDateFormat="MMM yyyy"
+        aric:titilDateFormat="MMM周 yyyy ddd"
         android:orientation="vertical"
         android:layout_width="match_parent"
         aric:leftButtonDrawable="@mipmap/ic_launcher"
         aric:rightButtonDrawable="@mipmap/ic_launcher"
         android:layout_height="200dp"/>
+
+    <aric.mycomponent.MyWatch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

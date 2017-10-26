@@ -2,6 +2,7 @@ package aric.mycomponent;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
@@ -15,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -31,6 +31,11 @@ import aspect.chou.aric.com.mycalender.R;
 
 public class CalenderComponent extends LinearLayout {
 
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
+
+    }
 
     private Drawable mLeftImageSrc;
     private boolean mLeftButtonVisibility;
@@ -166,15 +171,12 @@ public class CalenderComponent extends LinearLayout {
         Date time = mCurrentDate.getTime();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(mTitleDataFormat);
         String title = simpleDateFormat.format(time);
-        mTextView.setText(title);
-        Toast.makeText(context, title, Toast.LENGTH_SHORT).show();
-
         mTextLayoutParams  = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         mTextLayoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
         mTitleLayout.removeView(mTextView);
         mTextView.setText(title);
         mTitleLayout.addView(mTextView, mTextLayoutParams);
-        mTextView.setText(title);
+
 
 
 
@@ -256,6 +258,8 @@ public class CalenderComponent extends LinearLayout {
         public void onBindViewHolder(ViewHolder viewHolder, int position) {
             Date date = datas.get(position);
 
+            viewHolder.mTextView.setTextSize(8);
+
             if (date.getYear()==mCurrentDate.getTime().getYear()&&date.getMonth()==mCurrentDate.getTime().getMonth()){
                 viewHolder.mTextView.setText(datas.get(position).getDate()+"");
                 viewHolder.mTextView.setTextColor(Color.RED);
@@ -267,6 +271,7 @@ public class CalenderComponent extends LinearLayout {
             if (date.getMonth()==instance.getTime().getMonth()&&date.getYear()==instance.getTime().getYear()&&date.getDate()==instance.getTime().getDate())
                 viewHolder.mTextView.setTextColor(Color.BLUE);
             viewHolder.mTextView.setText(datas.get(position).getDate()+"");
+
 
         }
 
