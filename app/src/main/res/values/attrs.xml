@@ -10,4 +10,15 @@
         <attr name="rightButtonDrawable" format="reference|color"/>
         <attr name="rightButtonVisibility" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="MyViewPageIndicator">
+        <attr name="visibleIndicatorCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyChart">
+    </declare-styleable>
+
+    <declare-styleable name="MyProgressbar">
+
+    </declare-styleable>
 </resources>

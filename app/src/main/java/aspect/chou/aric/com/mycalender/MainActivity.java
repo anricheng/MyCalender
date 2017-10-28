@@ -38,13 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager = ((ViewPager) findViewById(R.id.fragment_container));
         mMyViewPageIndicator = ((MyViewPageIndicator) findViewById(R.id.my_viewpager_indicator));
+        mMyViewPageIndicator.setViewPager(mViewPager);
         mBaseFragments = getFragmentList();
-        mHandler.removeCallbacks();
+
 
         mMyFragmentViewPagerAdapter = new MyFragmentViewPagerAdapter(getSupportFragmentManager(), mBaseFragments);
 
 
         mViewPager.setAdapter(mMyFragmentViewPagerAdapter);
+
 
 
     }

@@ -8,6 +8,7 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -16,6 +17,7 @@ import android.view.View;
  */
 
 public class MyWatch extends View {
+
 
     private Paint paint;
     public MyWatch(Context context) {
@@ -35,6 +37,13 @@ public class MyWatch extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
+    }
+
+    
 
     @Override
         protected void onDraw (Canvas canvas){
