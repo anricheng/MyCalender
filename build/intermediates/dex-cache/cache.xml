@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/aric/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/aric/MyNote/MyCalender/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_7f4704cfb124ad00c52b78a99a7850438c030821.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aric/.android/build-cache/4d16a6981e3d5fe1c98532d28a82a7b78bb6b15e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="29c426f3ff52238291c86e939dff6bd8a877b86c">
+        <dex dex="/Users/aric/MyNote/MyCalender/app/build/intermediates/pre-dexed/debug/classes_ed68412a63a853929148573dad587d101bb7a06f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aric/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="/Users/aric/MyNote/MyCalender/app/build/intermediates/pre-dexed/debug/core-3.2.1_2315a0703d45dc191abd85b57d4a733b05cd5f84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aric/.android/build-cache/1a83df47f9b263f9d800382601987004e14731e9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/aric/MyNote/MyCalender/app/build/intermediates/pre-dexed/debug/classes_28108a97054addc1bb173a78e74b1fecd386ec03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/aric/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/57f850a6b317e5582f1dbaff10a9e7d7e1fcdcfb/rxjava-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="57f850a6b317e5582f1dbaff10a9e7d7e1fcdcfb">
+        <dex dex="/Users/aric/MyNote/MyCalender/app/build/intermediates/pre-dexed/debug/rxjava-2.0.1_c3c786eb254c9de1fec48addbc33e1de3581af8e.jar" />
+    </item>
+
+</items>

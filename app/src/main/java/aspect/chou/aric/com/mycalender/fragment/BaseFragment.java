@@ -19,6 +19,7 @@ public class BaseFragment extends Fragment{
 
     public static String TITLE;
     public static BaseFragment newInstance(String title) {
+        
 
         Bundle args = new Bundle();
 
